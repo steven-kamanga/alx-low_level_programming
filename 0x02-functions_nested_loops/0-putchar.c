@@ -3,6 +3,8 @@
 /**
  * main - Entry point
  *
+ * Description: program to pring _putchar
+ *
  * Return: Always 0 (Success)
  */
 int main(void)
