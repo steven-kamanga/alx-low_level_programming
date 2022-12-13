@@ -5,7 +5,7 @@
  *
  * Description: check the code for ALX School students
  *
- * Return: Always: Always 0 (Success)
+ * Return: Always 0 (Success)
  *
 */
 
