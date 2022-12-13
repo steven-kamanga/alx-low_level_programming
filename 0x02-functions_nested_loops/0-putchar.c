@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <main.h>
 
 /**
  * main - Entry point
@@ -8,16 +8,14 @@
  * Return: Always 0 (Success)
  */
 int main(void)
-{
-    int i;
-    char str[] = "_putchar";
+{	
 
-    for (i = 0; str[i] != '\0'; i++)
-    {
-        putchar(str[i]);
-    }
-    putchar('\n');
+	char str[] = "_putchar";
+	int ch;
 
-    return (0);
+	for (ch = 0; ch < 8; ++ch)
+		_putchar(str[ch]);
+	_putchar('\n');
+	return (0);
 }
 
