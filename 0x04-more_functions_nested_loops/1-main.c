@@ -1,12 +1,10 @@
 #include "main.h"
-
 /**
  * main - Check code for ALX School Students
  * 
  * Return: ALways 0 (Success)
  * 
 */
-
 int main(void)
 {
     char c;

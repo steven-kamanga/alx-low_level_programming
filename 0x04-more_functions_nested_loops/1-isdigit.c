@@ -1,6 +1,8 @@
 /**
+ * main - Program entry
+ * 
  * _isdigit - checks if input is digit between 0 - 9
- *
+ * Description above
  * @c: input
  *
  * Return: 1 if is digit, 0 if not
