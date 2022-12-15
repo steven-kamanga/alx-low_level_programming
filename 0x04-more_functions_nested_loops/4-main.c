@@ -1,4 +1,4 @@
-#include "main.h";
+#include "main.h"
 
 /**
  * main - check the code for ALX School students
@@ -8,6 +8,6 @@
 
 int main(void)
 {
-    print_most_numbers();
-    return (0);
+	print_most_numbers();
+	return (0);
 }
