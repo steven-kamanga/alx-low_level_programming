@@ -1,21 +1,33 @@
+#include "main.h"
+#include <stdio.h>
+
 /**
- * rot13 - encodes a string using the ROT13 cipher
- * @s: the string to be encoded
- */
-void rot13(char *s)
+  * rot13 - ...
+  * @s: ...
+  *
+  * Return: ...
+  */
+char *rot13(char *s)
 {
-  for (int i = 0; s[i] != '\0'; i++)
-  {
-    if (isalpha(s[i]))
-    {
-      if (isupper(s[i]))
-      {
-        s[i] = (s[i] - 'A' + 13) % 26 + 'A';
-      }
-      else
-      {
-        s[i] = (s[i] - 'a' + 13) % 26 + 'a';
-      }
-    }
-  }
+int a = 0;
+
+while (s[a])
+{
+while ((s[a] >= 'a' && s[a] <= 'z') || (s[a] >= 'A' && s[a] <= 'Z'))
+{
+if ((s[a] > 'm' && s[a] <= 'z') || (s[a] > 'M' && s[a] <= 'Z'))
+{
+s[a] -= 13;
+break;
 }
+
+s[a] += 13;
+break;
+}
+
+a++;
+}
+
+return (s);
+}
+
