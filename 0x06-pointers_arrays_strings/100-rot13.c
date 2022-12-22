@@ -1,6 +1,3 @@
-#include <stdio.h>
-#include <ctype.h>
-
 /**
  * rot13 - encodes a string using the ROT13 cipher
  * @s: the string to be encoded
