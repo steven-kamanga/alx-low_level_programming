@@ -1,5 +1,4 @@
-#include "../main.h"
-#include <stdio.h>
+#include "main.h"
 
 /**
  * main - check the code for ALX School students.
@@ -8,9 +7,6 @@
 */
 int main(void)
 {
-	int n;
-
-	n = _strlen_recursion("Corbin Coleman");
-	printf("%d\n", n);
+	_puts_recursion("Betty Holberton");
 	return (0);
 }
