@@ -8,24 +8,24 @@
  *
  */
 
-char *rot13(char *hi)
+char *rot13(char *s)
 {
 	int index, count;
 
 	char minus[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	char mayus[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
-	for (index = 0; hi[index] != '\0'; ++index)
+	for (index = 0; s[index] != '\0'; ++index)
 	{
 		for (count = 0; minus[count] != '\0' ; count++)
 		{
-			if (hi[index] == minus[count])
+			if (s[index] == minus[count])
 			{
-				hi[index] = mayus[count];
+				s[index] = mayus[count];
 				break;
 			}
 		}
 	}
-	hi[index] = '\0';
-	return (hi);
+	s[index] = '\0';
+	return (s);
 }
