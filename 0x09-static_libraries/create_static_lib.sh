@@ -5,5 +5,5 @@
 # that are in the current directory
 
 gcc -c *.c
-ar rc libmy.a *.o
+ar rc liball.a *.o
 echo y | rm -I *.o
