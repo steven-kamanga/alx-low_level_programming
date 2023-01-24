@@ -10,6 +10,13 @@
  * printing function
  * Return: a pointer to the matching printing function
  */
+/**
+ *get_print - finction to turn on a flag it _printf finds a flag modifier
+  * @s: character that holds the flag specifier
+ * @f: pointer to the struct flags in which we turn the flags on
+ *Return : 1 for flag and else 0
+ *
+*/
 int (*get_print(char s))(va_list, flags_t *)
 {
 	ph func_arr[] = {
