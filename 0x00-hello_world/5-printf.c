@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- *main - Entry point
+*Entry - Entry point
  *
  *Description: A C program that ptints with printf function
  *
