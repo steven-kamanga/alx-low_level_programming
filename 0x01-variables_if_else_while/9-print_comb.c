@@ -1,30 +1,23 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * main - Prints all possible combinations of single-digit numbers.
  *
- * Description: Print 0, 1, -
- *
- * Return: Always 0 (Success)
- *
-*/
-
+ * Return: Always 0.
+ */
 int main(void)
 {
-	int digit = 0;
+	int num;
 
-	while(digit <= 9)
+	for (num = 0; num <= 9; num++)
 	{
-		putchar(digit + 48)
-
-		if(digit != 9)
-		{
-			putchar(',');
-			putchar(' ');
-		}
-
-		++digit;
+		putchar((num % 10) + '0');
+		if (num == 9)
+			continue;
+		putchar(',');
+		putchar(' ');
 	}
+
 	putchar('\n');
 
 	return (0);

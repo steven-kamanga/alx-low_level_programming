@@ -1,32 +1,20 @@
 #include <stdio.h>
 
 /**
- *main - Entey point
+ * main - Prints the alphabet in lowercase, and then in uppercase.
  *
- *Descriptiom: Print alphabet
- *
- *Return: Always 0 (Success)
- *
-*/
-
+ * Return: Always 0.
+ */
 int main(void)
 {
-	char ch = 'a';
-	char CH = 'A';
+	char letter;
 
-	/*prints a - z*/
+	for (letter = 'a'; letter <= 'z'; letter++)
+		putchar(letter);
 
-	while (ch <= 'z')
-	{
-		putchar(ch);
-		++ch;
-	}
-	/*primt A - Z*/
-	while(CH < 'Z')
-	{
-		putchar(CH);
-		++CH;
-	}
+	for (letter = 'A'; letter <= 'Z'; letter++)
+		putchar(letter);
+
 	putchar('\n');
 
 	return (0);
